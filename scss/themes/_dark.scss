@@ -1,0 +1,8 @@
+html.dark {
+  --text-color: #ffffff;
+  --icon-color: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
+    hue-rotate(304deg) brightness(102%) contrast(101%);
+  --header-bg-color: #171c28;
+  --header-bg-cta: #292e39;
+  --header-shadow-cta: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+}

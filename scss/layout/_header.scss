@@ -1,0 +1,126 @@
+@use "../abstracts" as abs;
+
+.header {
+  background-color: var(--header-bg-color);
+  padding: 30px 0;
+  @include abs.breakpoint(lg) {
+    padding: 16px 0;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__more-moible {
+      display: none;
+
+      @include abs.breakpoint(lg) {
+        display: block;
+      }
+    }
+
+    .navbar {
+      @include abs.breakpoint(lg) {
+        display: none;
+      }
+    }
+
+    .navbar__list {
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar__item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .navbar__link {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 146.667%;
+    }
+
+    .header__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--header-bg-cta);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: var(--header-shadow-cta);
+
+      @include abs.breakpoint(lg) {
+        display: none;
+      }
+    }
+
+    .header__action {
+      display: flex;
+      gap: 20px;
+    }
+
+    .header-cart-group {
+      border-radius: 8px;
+      display: flex;
+      box-shadow: var(--header-shadow-cta);
+
+      @include abs.breakpoint(sm) {
+        display: none;
+      }
+    }
+
+    .header-cart-group__btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: none;
+      background-color: var(--header-bg-cta);
+      padding: 10px 20px;
+    }
+
+    .header-cart-group__btn:first-child {
+      position: relative;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .header-cart-group__btn:last-child {
+      border-radius: 0 8px 8px 0;
+    }
+
+    .header-cart-group__separate {
+      position: absolute;
+      left: 100%;
+      width: 1px;
+      height: 60%;
+      background-color: #ededf6;
+    }
+
+    .header-cart-group__title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: Gordita;
+    }
+
+    .header__user {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      background-color: #dfd2fa;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .header__content-right {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
