@@ -70,7 +70,7 @@
       display: flex;
       box-shadow: var(--header-shadow-cta);
 
-      @include abs.breakpoint(sm) {
+      @include abs.breakpoint(md) {
         display: none;
       }
     }
