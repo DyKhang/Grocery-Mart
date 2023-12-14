@@ -1,3 +1,5 @@
+@use "../abstracts" as abs;
+
 html.dark {
   --text-color: #ffffff;
   --icon-color: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
@@ -6,4 +8,12 @@ html.dark {
   --header-bg-cta: #292e39;
   --header-shadow-cta: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
   --body-bg-color: #292e39;
+  --dropdown-bg-color: #4f5970;
+  --dropdown-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(34%) sepia(19%)
+    saturate(585%) hue-rotate(184deg) brightness(95%) contrast(90%);
+
+  @include abs.breakpoint(lg) {
+    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+  }
 }
