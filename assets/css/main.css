@@ -1468,8 +1468,14 @@ select {
 .menu-column__content {
   flex: 1;
 }
-.menu-column__item:hover .sub-menu {
+.menu-column__item:hover .sub-menu, .menu-column__item--active .sub-menu {
   display: flex;
+}
+.menu-column__item + .menu-column__item {
+  padding-top: 14px;
+}
+.menu-column__item--active .menu-column__link, .menu-column__item:hover .menu-column__link {
+  color: #0071dc;
 }
 .menu-column__icon {
   position: relative;
@@ -1500,7 +1506,6 @@ select {
   margin-top: 26px;
   display: flex;
   flex-direction: column;
-  row-gap: 14px;
 }
 .menu-column__link {
   display: block;
@@ -1508,15 +1513,11 @@ select {
   font-weight: 400;
   line-height: 142.857%;
 }
-.menu-column__link:hover {
-  color: #0071dc;
-  font-weight: 500;
-}
 
 .sub-menu {
-  padding-left: 30px;
+  padding-left: 60px;
   position: absolute;
-  inset: 30px 62px 30px 322px;
+  inset: 30px 62px 30px 292px;
   overflow-y: auto;
   justify-content: space-between;
   display: none;
@@ -1525,6 +1526,11 @@ select {
   position: relative;
   width: 36px;
   height: 36px;
+}
+@media (max-width: 1199.98px) {
+  .sub-menu__icon {
+    display: none;
+  }
 }
 .sub-menu__icon-1, .sub-menu__icon-2 {
   object-fit: cover;
@@ -1561,7 +1567,6 @@ select {
 }
 .sub-menu__link:hover {
   color: #0071dc;
-  font-weight: 500;
 }
 
 :root {
