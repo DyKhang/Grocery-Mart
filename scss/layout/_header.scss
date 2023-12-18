@@ -3,7 +3,7 @@
 .header {
   background-color: var(--header-bg-color);
   padding: 30px 0;
-  @include abs.breakpoint(lg) {
+  @include abs.screen(lg) {
     padding: 16px 0;
     box-shadow: var(--header-shadow-color);
   }
@@ -24,7 +24,7 @@
       line-height: 146.667%;
       padding: 0 15px;
 
-      @include abs.breakpoint(lg) {
+      @include abs.screen(lg) {
         padding: 0;
         justify-content: space-between;
         font-size: 1.6rem;
@@ -38,7 +38,7 @@
         &:hover .dropdown {
           display: block;
 
-          @include abs.breakpoint(lg) {
+          @include abs.screen(lg) {
             display: none;
           }
         }
@@ -46,12 +46,12 @@
         &:hover .navbar__arrow {
           opacity: 0;
 
-          @include abs.breakpoint(lg) {
+          @include abs.screen(lg) {
             opacity: 1;
           }
         }
 
-        @include abs.breakpoint(lg) {
+        @include abs.screen(lg) {
           &--active .dropdown {
             display: block !important;
           }
@@ -65,7 +65,7 @@
       &__arrow-left {
         display: none;
 
-        @include abs.breakpoint(lg) {
+        @include abs.screen(lg) {
           display: block;
         }
       }
@@ -88,7 +88,7 @@
         }
       }
 
-      @include abs.breakpoint(lg) {
+      @include abs.screen(lg) {
         position: fixed;
         inset: 0 50% 0 0;
         background-color: var(--dropdown-bg-color);
@@ -116,7 +116,7 @@
         }
       }
 
-      @include abs.breakpoint(md) {
+      @include abs.screen(md) {
         inset: 0 20% 0 0;
       }
     }
@@ -124,7 +124,7 @@
     .navbar__list {
       display: flex;
 
-      @include abs.breakpoint(lg) {
+      @include abs.screen(lg) {
         flex-direction: column;
         row-gap: 20px;
         overflow-y: auto;
@@ -132,11 +132,11 @@
         overscroll-behavior: contain;
       }
 
-      @include abs.breakpoint(md) {
+      @include abs.screen(md) {
         height: calc(100% - 150px);
       }
 
-      @include abs.breakpoint(sm) {
+      @include abs.screen(sm) {
         height: calc(100% - 230px);
       }
     }
@@ -144,7 +144,7 @@
     .navbar__arrow {
       margin-top: 3px;
 
-      @include abs.breakpoint(lg) {
+      @include abs.screen(lg) {
         rotate: -90deg;
         transition: rotate 0.25s ease;
       }
@@ -162,7 +162,7 @@
       cursor: pointer;
       box-shadow: var(--header-shadow-cta);
 
-      @include abs.breakpoint(lg) {
+      @include abs.screen(lg) {
         display: none;
       }
     }
@@ -177,7 +177,7 @@
       display: flex;
       box-shadow: var(--header-shadow-cta);
 
-      @include abs.breakpoint(md) {
+      @include abs.screen(md) {
         display: none;
       }
     }
@@ -238,7 +238,7 @@
   transition-property: visibility, opacity;
   transition: 0.1s ease;
 
-  @include abs.breakpoint(lg) {
+  @include abs.screen(lg) {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     inset: 0;

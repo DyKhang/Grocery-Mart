@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  @include abs.breakpoint(lg) {
+  @include abs.screen(lg) {
     gap: 10px;
   }
 
@@ -12,13 +12,13 @@
     font-weight: 700;
     line-height: 145.455%;
 
-    @include abs.breakpoint(lg) {
+    @include abs.screen(lg) {
       font-size: 1.8rem;
     }
   }
 
   &__img {
-    @include abs.breakpoint(lg) {
+    @include abs.screen(lg) {
       width: 24px;
     }
   }
