@@ -1510,7 +1510,7 @@ select {
 }
 @media (max-width: 575.98px) {
   .header .header__inner .navbar__list {
-    height: calc(100% - 230px);
+    height: calc(100% - 130px);
   }
 }
 .header .header__inner .navbar__arrow {
