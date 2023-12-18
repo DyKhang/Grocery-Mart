@@ -6,6 +6,10 @@
   padding-top: 68px;
   width: min(1240px, 100%);
   display: none;
+  @include abs.breakpoint(lg) {
+    position: initial;
+    padding-top: 20px;
+  }
 
   &__inner {
     height: min(582px, 100vh - 110px - 56px);
@@ -22,6 +26,18 @@
       left: var(--arrow-left-pos);
       translate: -50%;
       filter: var(--dropdown-arrow-color);
+
+      @include abs.breakpoint(lg) {
+        display: none;
+      }
+    }
+
+    @include abs.breakpoint(lg) {
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      box-shadow: none;
+      height: auto;
     }
   }
 
@@ -29,6 +45,11 @@
     width: 292px;
     height: 100%;
     overflow-y: auto;
+
+    @include abs.breakpoint(lg) {
+      width: 100%;
+      overflow-y: initial;
+    }
   }
 }
 
@@ -60,6 +81,10 @@
     position: relative;
     width: 36px;
     height: 36px;
+
+    @include abs.breakpoint(lg) {
+      display: none;
+    }
   }
 
   &__icon-1,
@@ -85,12 +110,20 @@
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
+
+    @include abs.breakpoint(lg) {
+      display: none;
+    }
   }
 
   &__list {
     margin-top: 26px;
     display: flex;
     flex-direction: column;
+
+    @include abs.breakpoint(lg) {
+      margin-top: 0;
+    }
   }
 
   &__link {
@@ -109,6 +142,14 @@
   justify-content: space-between;
   display: none;
 
+  &__column {
+    @include abs.breakpoint(lg) {
+      & + & {
+        display: none;
+      }
+    }
+  }
+
   &__icon {
     position: relative;
     width: 36px;
@@ -116,6 +157,9 @@
 
     @include abs.breakpoint(xl) {
       display: none;
+    }
+    @include abs.breakpoint(lg) {
+      display: block;
     }
   }
 
@@ -171,5 +215,12 @@
     display: flex;
     height: 100%;
     overflow-y: auto;
+  }
+
+  @include abs.breakpoint(lg) {
+    margin-top: 14px;
+    position: initial;
+    padding-left: 0;
+    flex-direction: column;
   }
 }
