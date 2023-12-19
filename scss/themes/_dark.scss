@@ -14,6 +14,8 @@ html.dark {
     saturate(585%) hue-rotate(184deg) brightness(95%) contrast(90%);
   --cate-item-img-bg-color: #292e39;
   --cate-item-bg-color: #171c28;
+  --filter-btn-color-text: #ffffff;
+  --filter-btn-bg-color: #171c28;
   @include abs.screen(lg) {
     --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
   }
