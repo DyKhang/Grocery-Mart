@@ -10,10 +10,14 @@
   }
 
   &__heading {
-    margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 141.667%;
+
+    @include abs.screen(md) {
+      font-size: 2.2rem;
+      line-height: 145.455%;
+    }
   }
 
   &__cate {
@@ -34,6 +38,7 @@
   }
 
   &__row {
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

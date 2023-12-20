@@ -22,4 +22,12 @@
   background-color: #fff;
   box-shadow: 0px 20px 60px rgba(124, 124, 124, 0.2);
   cursor: pointer;
+
+  &:not(&--liked) .product-card__icon--liked {
+    display: none;
+  }
+
+  &--liked .product-card__icon {
+    display: none;
+  }
 }
