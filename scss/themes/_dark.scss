@@ -16,6 +16,9 @@ html.dark {
   --cate-item-bg-color: #171c28;
   --filter-btn-color-text: #ffffff;
   --filter-btn-bg-color: #171c28;
+  --product-card-bg-color: #171c28;
+  --product-card-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+  --like-btn-bg-color: #292e39;
   @include abs.screen(lg) {
     --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
   }
