@@ -4,22 +4,42 @@ html.dark {
   --text-color: #ffffff;
   --icon-color: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
     hue-rotate(304deg) brightness(102%) contrast(101%);
+
+  @include abs.screen(lg) {
+    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  //  Header
   --header-bg-color: #171c28;
   --header-bg-cta: #292e39;
   --header-shadow-cta: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+
+  // Body
   --body-bg-color: #292e39;
+
+  // Drop Down
   --dropdown-bg-color: #4f5970;
   --dropdown-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(34%) sepia(19%)
     saturate(585%) hue-rotate(184deg) brightness(95%) contrast(90%);
+
+  //  Cate Item
   --cate-item-img-bg-color: #292e39;
   --cate-item-bg-color: #171c28;
-  --filter-btn-color-text: #ffffff;
-  --filter-btn-bg-color: #171c28;
+
+  // Product Card
   --product-card-bg-color: #171c28;
   --product-card-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+
+  // Like Button
   --like-btn-bg-color: #292e39;
-  @include abs.screen(lg) {
-    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
-  }
+
+  // Filter
+  --filter-btn-color-text: #ffffff;
+  --filter-btn-bg-color: #171c28;
+  --filter-bg-color: #292e39;
+  --filter-shadow: (0px 40px 90px rgba(0, 0, 0, 0.4));
+  --filter-arrow-up-color: brightness(0) saturate(100%) invert(13%) sepia(38%)
+    saturate(404%) hue-rotate(184deg) brightness(95%) contrast(87%);
+  --filter-bg-tag-color: #171c28;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -211,7 +211,7 @@
                             <img
                               src="./assets/icons/arrow-down.svg"
                               alt=""
-                              class="filter__arrow-down"
+                              class="filter__arrow-down icon"
                             />
                           </div>
                           <div class="filter__form-select">
@@ -219,7 +219,7 @@
                             <img
                               src="./assets/icons/arrow-down.svg"
                               alt=""
-                              class="filter__arrow-down"
+                              class="filter__arrow-down icon"
                             />
                           </div>
                         </div>
@@ -247,7 +247,7 @@
                         <img
                           src="assets/icons/header-search.svg"
                           alt=""
-                          class="filter__form-search-icon"
+                          class="filter__form-search-icon icon"
                         />
                       </div>
                       <div class="filter__form-group">
@@ -262,10 +262,16 @@
 
                   <div class="filter__row">
                     <div class="filter__cta">
-                      <button class="btn btn--text filter__cancel">
+                      <button
+                        toggle-target="#filter"
+                        class="btn js-toggle btn--text filter__cancel"
+                      >
                         Cancel
                       </button>
-                      <button class="btn btn--primary filter__submit">
+                      <button
+                        toggle-target="#filter"
+                        class="btn js-toggle btn--primary filter__submit"
+                      >
                         Show Result
                       </button>
                     </div>
