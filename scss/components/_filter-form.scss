@@ -60,6 +60,10 @@
         font-weight: 400;
         color: #9e9da8;
       }
+
+      @include abs.screen(sm) {
+        font-size: 1.6rem;
+      }
     }
 
     &-search-icon {
@@ -168,6 +172,7 @@
 
     @include abs.screen(sm) {
       width: 100%;
+      font-size: 1.6rem;
     }
   }
 

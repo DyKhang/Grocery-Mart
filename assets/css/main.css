@@ -2206,6 +2206,11 @@ select {
   font-weight: 400;
   color: #9e9da8;
 }
+@media (max-width: 575.98px) {
+  .filter__form-search {
+    font-size: 1.6rem;
+  }
+}
 .filter__form-search-icon {
   position: absolute;
   right: 16px;
@@ -2298,6 +2303,7 @@ select {
 @media (max-width: 575.98px) {
   .filter__form-input {
     width: 100%;
+    font-size: 1.6rem;
   }
 }
 .filter__separate {
