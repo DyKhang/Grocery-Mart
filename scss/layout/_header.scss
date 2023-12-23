@@ -230,6 +230,14 @@
       gap: 20px;
     }
   }
+
+  &__sign-up {
+    @include abs.screen(md) {
+      height: 40px !important;
+      font-size: 1.5rem !important;
+      padding: 0 15px !important;
+    }
+  }
 }
 
 .navbar-overlay-mobile {

@@ -1,0 +1,192 @@
+@use "../abstracts" as abs;
+
+.auth {
+  display: flex;
+  min-height: 100vh;
+
+  &__intro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    position: relative;
+
+    @include abs.screen(md) {
+      background-color: #fff;
+    }
+
+    &-desc {
+      margin-top: 49px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+      max-width: 424px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      translate: -50% 0;
+      @include abs.screen(md) {
+        &__img {
+          width: 32px;
+        }
+
+        &__title {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    &-forward {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      translate: -50% 0;
+      align-items: center;
+      gap: 13px;
+    }
+  }
+
+  &__arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ededf6;
+
+    &--black {
+      background-color: #b9babe;
+    }
+  }
+
+  &-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 0 30px 52px 30px;
+    position: relative;
+
+    @include abs.screen(md) {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      translate: 100%;
+      transition: translate 0.3s ease;
+
+      &.show {
+        translate: initial;
+      }
+
+      .logo {
+        &__img {
+          width: 32px;
+        }
+
+        &__title {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    &__inner {
+      margin: 50px auto 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 460px;
+    }
+
+    &__heading {
+      margin-top: 50px;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 146.667%;
+
+      @include abs.screen(sm) {
+        font-size: 2.2rem;
+      }
+    }
+
+    &__desc {
+      text-align: center;
+      color: #9e9da8;
+      margin-top: 10px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 146.667%;
+
+      @include abs.screen(sm) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__form {
+      margin-top: 60px;
+      width: 100%;
+
+      @include abs.screen(sm) {
+        margin-top: 30px;
+      }
+    }
+
+    &__link {
+      color: #0071dc;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 146.667%;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &__signup,
+    &__signin {
+      border-radius: 10px;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    &__signin {
+      gap: 10px;
+    }
+
+    &__text {
+      margin-top: 108px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      @include abs.screen(sm) {
+        margin-top: 56px;
+      }
+    }
+
+    &__arrow {
+      position: absolute;
+      rotate: 180deg;
+      top: 20px;
+      left: 20px;
+
+      @include abs.screen(sm) {
+        width: 23px;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}

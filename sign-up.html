@@ -31,19 +31,134 @@
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header" id="header"></header>
-    <script>
-      load("#header", "./templates/header.html");
-    </script>
+    <main class="auth">
+      <div class="auth__intro">
+        <a href="./" class="logo d-none d-md-flex">
+          <img src="./assets/icons/Icon.svg" alt="" class="logo__img" />
+          <h1 class="logo__title">grocerymart</h1>
+        </a>
+        <img src="./assets/images/sign-up/intro.svg" alt="" class="auth__img" />
+        <p class="auth__intro-desc">
+          The best of luxury brand values, high quality products, and innovative
+          services
+        </p>
+        <div class="auth__intro-forward d-none d-md-flex">
+          <div class="auth__dot auth__dot--black"></div>
+          <div class="auth__dot"></div>
+          <button
+            toggle-target="#auth-content"
+            class="js-toggle auth__arrow-right"
+          >
+            <img
+              src="./assets/icons/auth-arrow-right.svg"
+              alt=""
+              class="auth__next"
+            />
+          </button>
+        </div>
+      </div>
+      <div id="auth-content" class="auth-content hide">
+        <img
+          src="./assets/icons/auth-arrow-right.svg"
+          alt=""
+          class="auth-content__arrow d-none d-md-block js-toggle"
+          toggle-target="#auth-content"
+        />
 
-    <!-- Main -->
-    <h1>Sign up Page</h1>
+        <div class="auth-content__inner">
+          <a href="./" class="logo">
+            <img src="./assets/icons/Icon.svg" alt="" class="logo__img" />
+            <h1 class="logo__title">grocerymart</h1>
+          </a>
+          <h1 class="auth-content__heading">Sign Up</h1>
+          <p class="auth-content__desc">
+            Let’s create your account and Shop like a pro and save money.
+          </p>
 
-    <!-- Footer -->
-    <footer class="footer" id="footer"></footer>
+          <form action="./index-logined.html" class="form auth-content__form">
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                  class="form__input"
+                />
+                <img
+                  src="./assets/icons/letter.svg"
+                  alt=""
+                  class="form__icon"
+                />
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Password"
+                  class="form__input"
+                />
+                <img
+                  src="./assets/icons/locked.svg"
+                  alt=""
+                  class="form__icon"
+                />
+              </div>
+            </div>
+            <div class="form__group">
+              <div class="form__text-input">
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Confirm Password"
+                  class="form__input"
+                />
+                <img
+                  src="./assets/icons/locked.svg"
+                  alt=""
+                  class="form__icon"
+                />
+              </div>
+            </div>
+
+            <div class="form__group--inline form__group">
+              <label class="form__checkbox">
+                <input
+                  hidden
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="form__checkbox-input"
+                />
+                <span class="form__checkbox-label">Set as default card</span>
+              </label>
+              <a href="#!" class="auth-content__link">Recovery Password</a>
+            </div>
+
+            <div class="form__group auth-content__buttons">
+              <button class="btn btn--primary auth-content__signup">
+                Sign Up
+              </button>
+              <button class="btn btn--outline auth-content__signin">
+                <img src="./assets/icons/gmail.svg" alt="" />
+                Sign in with Gmail
+              </button>
+            </div>
+          </form>
+
+          <p class="auth-content__text">
+            You have an account yet?
+            <a href="./sign-in.html" class="auth-content__link">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </main>
     <script>
-      load("#footer", "./templates/footer.html");
+      window.dispatchEvent(new Event("template-loaded"));
     </script>
   </body>
 </html>

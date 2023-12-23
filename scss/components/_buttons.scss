@@ -34,6 +34,9 @@
 
 // Buttons
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 46px;
   padding: 0 20px;
   background-color: #f8f8fb;
@@ -44,7 +47,6 @@
 
   &--text {
     background-color: transparent;
-    color: #9e9da8;
     font-weight: 400;
   }
 
