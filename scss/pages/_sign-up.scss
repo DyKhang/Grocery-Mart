@@ -12,10 +12,7 @@
     flex-direction: column;
     padding: 0 30px;
     position: relative;
-
-    @include abs.screen(md) {
-      background-color: #fff;
-    }
+    background-color: var(--auth-intro-bg-color);
 
     &-desc {
       margin-top: 49px;
@@ -71,7 +68,7 @@
 
   &-content {
     flex: 1;
-    background-color: #fff;
+    background-color: var(--auth-content-bg-color);
     padding: 0 30px 52px 30px;
     position: relative;
 
@@ -81,6 +78,7 @@
       z-index: 1;
       translate: 100%;
       transition: translate 0.3s ease;
+      overflow-y: auto;
 
       &.show {
         translate: initial;

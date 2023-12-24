@@ -87,6 +87,10 @@
       font-size: 1.5rem;
       font-weight: 400;
     }
+
+    @include abs.screen(sm) {
+      font-size: 1.6rem;
+    }
   }
 
   &__email-text {
