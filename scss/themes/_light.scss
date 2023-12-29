@@ -47,6 +47,13 @@
   --auth-intro-bg-color: #f6f6f6;
   --auth-content-bg-color: #fff;
 
+  // Breadcrumbs
+  --breadcrumbs-bg-color: #f6f6f6;
+  --breadcrumbs-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+  // Product-page
+  --product-page-bg-color: #fff;
+
   @include abs.screen(lg) {
     --header-bg-color: #fff;
     --header-shadow-color: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);

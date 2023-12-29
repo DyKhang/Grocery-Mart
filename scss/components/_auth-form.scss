@@ -1,4 +1,5 @@
 @use "../abstracts" as abs;
+$error: #ed4337;
 
 .form {
   &:has(:invalid) &__submit-btn {
@@ -10,9 +11,13 @@
     position: relative;
     margin-top: 30px;
 
+    &:first-child {
+      margin-top: 0;
+    }
+
     &:nth-child(2) {
       @include abs.screen(sm) {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
 
@@ -29,8 +34,8 @@
 
   &__group:has(:invalid):has(&__input:not(:placeholder-shown)) {
     .form__text-input {
-      border-color: red;
-      background-color: rgba($color: red, $alpha: 0.1);
+      border-color: $error;
+      background-color: rgba($color: $error, $alpha: 0.1);
     }
 
     .form__error,
@@ -66,6 +71,14 @@
       font-size: 1.8rem;
       font-weight: 500;
     }
+
+    @include abs.screen(sm) {
+      font-size: 1.6rem;
+
+      &::placeholder {
+        font-size: 1.6rem;
+      }
+    }
   }
 
   &__error {
@@ -74,8 +87,15 @@
     left: 0;
     font-size: 1.4rem;
     font-weight: 500;
-    color: red;
+    color: $error;
     display: none;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    translate: 0 -50%;
   }
 
   &__icon-error {
