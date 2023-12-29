@@ -5,10 +5,6 @@ html.dark {
   --icon-color: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
     hue-rotate(304deg) brightness(102%) contrast(101%);
 
-  @include abs.screen(lg) {
-    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
-  }
-
   //  Header
   --header-bg-color: #171c28;
   --header-bg-cta: #292e39;
@@ -56,4 +52,17 @@ html.dark {
 
   // Product-page
   --product-page-bg-color: #292e39;
+
+  // Product Detail
+  --product-info-bg-color: #171c28;
+  --product-size-tag-bg-color: #292e39;
+
+  @include abs.screen(lg) {
+    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @include abs.screen(sm) {
+    --product-info-bg-color: transparent;
+    --product-bg-color: #171c28;
+  }
 }

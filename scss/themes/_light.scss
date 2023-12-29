@@ -54,6 +54,11 @@
   // Product-page
   --product-page-bg-color: #fff;
 
+  // Product Detail
+  --product-info-bg-color: #f6f6f6;
+  --product-bg-color: transparent;
+  --product-size-tag-bg-color: #ededf6;
+
   @include abs.screen(lg) {
     --header-bg-color: #fff;
     --header-shadow-color: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
@@ -61,6 +66,7 @@
 
   @include abs.screen(sm) {
     --cate-item-bg-color: #fff;
+    --product-info-bg-color: #fff;
   }
 
   @include abs.screen(md) {

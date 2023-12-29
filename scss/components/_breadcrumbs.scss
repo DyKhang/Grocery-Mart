@@ -7,6 +7,10 @@
   border-radius: 10px;
   box-shadow: var(--breadcrumbs-shadow);
 
+  @include abs.screen(sm) {
+    border-radius: 20px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
