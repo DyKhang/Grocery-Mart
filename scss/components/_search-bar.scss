@@ -1,0 +1,23 @@
+.search-bar {
+  margin-top: 20px;
+  padding: 13px 15px;
+  background-color: var(--search-bar-bg-color);
+  border-radius: 10px;
+
+  &__input {
+    flex: 1;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 142.857%;
+    background-color: transparent;
+
+    &::placeholder {
+      color: #9e9da8;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 142.857%;
+    }
+  }
+}

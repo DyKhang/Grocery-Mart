@@ -38,6 +38,23 @@
     </script>
     <main style="height: 5000px">
       <div class="container">
+        <div class="search-bar d-none d-md-flex">
+          <input
+            type="text"
+            name=""
+            placeholder="Search for item"
+            id=""
+            class="search-bar__input"
+          />
+          <button class="search-bar__btn">
+            <img
+              src="./assets/icons/header-search.svg"
+              alt=""
+              class="search-bar__icon icon"
+            />
+          </button>
+        </div>
+
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -214,6 +231,180 @@
                 </form>
               </section>
             </div>
+          </div>
+        </section>
+
+        <section class="product-tab">
+          <ul class="product-tab__list">
+            <li class="product-tab__item">Description</li>
+            <li class="product-tab__item">Features</li>
+            <li class="product-tab__item product-tab__item--active">
+              Review (1100)
+            </li>
+          </ul>
+
+          <div class="product-tab__contents">
+            <div class="product-tab__content"></div>
+            <div class="product-tab__content"></div>
+            <div class="product-tab__content">
+              <h2 class="product-tab__heading">
+                What our customers are saying
+              </h2>
+              <div class="review-cards">
+                <div class="row row-cols-3 gx-lg-2 row-cols-md-1 gy-md-3">
+                  <!-- Column 1 -->
+                  <div class="col">
+                    <div class="review-card">
+                      <div class="review-card__row">
+                        <img
+                          src="./assets/images/product-tab-avatar-1.jpg"
+                          alt=""
+                          class="review-card__img"
+                        />
+                        <div class="review-card__col">
+                          <h3 class="review-card__title">Jakir Hussen</h3>
+                          <p class="review-card__desc">
+                            Great product, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <div class="review-card__icons">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/half-star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                        </div>
+
+                        <span class="review-card__score">(3.5) Review</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Column 2 -->
+                  <div class="col">
+                    <div class="review-card">
+                      <div class="review-card__row">
+                        <img
+                          src="./assets/images/product-tab-avatar.jpg"
+                          alt=""
+                          class="review-card__img"
+                        />
+                        <div class="review-card__col">
+                          <h3 class="review-card__title">Jubed Ahmed</h3>
+                          <p class="review-card__desc">
+                            Awesome Coffee, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <div class="review-card__icons">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/half-star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                        </div>
+
+                        <span class="review-card__score">(3.5) Review</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Column 3 -->
+                  <div class="col">
+                    <div class="review-card">
+                      <div class="review-card__row">
+                        <img
+                          src="./assets/images/product-tab-avatar-2.jpg"
+                          alt=""
+                          class="review-card__img"
+                        />
+                        <div class="review-card__col">
+                          <h3 class="review-card__title">Delwar Hussain</h3>
+                          <p class="review-card__desc">
+                            Great product, I love this Coffee Beans
+                          </p>
+                        </div>
+                      </div>
+                      <div class="review-card__rating">
+                        <div class="review-card__icons">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/half-star.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                          <img
+                            src="./assets/icons/star-outline.svg"
+                            alt=""
+                            class="review-card__icon"
+                          />
+                        </div>
+
+                        <span class="review-card__score">(3.5) Review</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-tab__content"></div>
           </div>
         </section>
       </div>
