@@ -63,6 +63,12 @@
   // Search Bar
   --search-bar-bg-color: #fff;
 
+  // Product Tab
+  --product-tab-item-active: #1a162e;
+
+  // Review Card
+  --review-card-bg-color: #fafafd;
+
   @include abs.screen(lg) {
     --header-bg-color: #fff;
     --header-shadow-color: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
@@ -74,6 +80,7 @@
     --product-page-bg-color: #fafafd;
     --breadcrumbs-bg-color: #fff;
     --product-bg-color: #fff;
+    --review-card-bg-color: #fff;
   }
 
   @include abs.screen(md) {

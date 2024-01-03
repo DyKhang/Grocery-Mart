@@ -61,6 +61,12 @@ html.dark {
   // Search Bar
   --search-bar-bg-color: #171c28;
 
+  // Product Tab
+  --product-tab-item-active: #fff;
+
+  // Review Card
+  --review-card-bg-color: #171c28;
+
   @include abs.screen(lg) {
     --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
   }

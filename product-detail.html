@@ -36,7 +36,7 @@
     <script>
       load("#header", "./templates/header-logined.html");
     </script>
-    <main style="height: 5000px">
+    <main>
       <div class="container">
         <div class="search-bar d-none d-md-flex">
           <input
@@ -234,18 +234,101 @@
           </div>
         </section>
 
-        <section class="product-tab">
+        <section class="product-tab js-tabs">
           <ul class="product-tab__list">
-            <li class="product-tab__item">Description</li>
-            <li class="product-tab__item">Features</li>
             <li class="product-tab__item product-tab__item--active">
-              Review (1100)
+              Description
             </li>
+            <li class="product-tab__item">Review (1100)</li>
+            <li class="product-tab__item">Similar</li>
           </ul>
 
           <div class="product-tab__contents">
-            <div class="product-tab__content"></div>
-            <div class="product-tab__content"></div>
+            <div class="product-tab__content product-tab__content--active">
+              <div class="row">
+                <div class="col-8">
+                  <div class="text-content">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Laudantium architecto earum aliquam, asperiores
+                      dignissimos praesentium rerum atque libero quis mollitia
+                      esse necessitatibus accusamus adipisci inventore a
+                      exercitationem voluptatem fuga itaque.
+                    </p>
+                    <p>
+                      <img
+                        src="./assets/images/category-item/item-3.png"
+                        alt=""
+                      />
+                      <em>Lorem ipsum dolor sit amet consectetur.</em>
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit,
+                      <a href="#!">amet consectetur</a> adipisicing elit.
+                      Laudantium architecto earum aliquam, asperiores
+                      dignissimos praesentium rerum atque libero quis mollitia
+                      esse necessitatibus accusamus adipisci inventore a
+                      exercitationem voluptatem fuga itaque.
+                    </p>
+                    <blockquote>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Laudantium architecto earum aliquam, asperiores
+                        dignissimos praesentium rerum atque libero quis mollitia
+                        esse necessitatibus accusamus adipisci inventore a
+                        exercitationem voluptatem fuga itaque. Lorem ipsum dolor
+                        sit, amet consectetur adipisicing elit. Laudantium
+                        architecto earum aliquam, asperiores dignissimos
+                        praesentium rerum atque libero quis mollitia esse
+                        necessitatibus accusamus adipisci inventore a
+                        exercitationem voluptatem fuga itaque.
+                      </p>
+                    </blockquote>
+
+                    <hr />
+
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Laudantium architecto earum aliquam, asperiores
+                      dignissimos praesentium rerum atque libero quis mollitia
+                      esse necessitatibus accusamus
+                      <a href="#!">adipisci inventore a</a> exercitationem
+                      voluptatem fuga itaque.
+                    </p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Deleniti reiciendis quam fuga, molestias cum possimus!
+                      Nesciunt amet eveniet iusto ea, neque, at inventore fuga
+                      molestiae est perspiciatis, unde quam praesentium?
+                    </p>
+                    <p>
+                      <img
+                        src="./assets/images/category-item/item-2.png"
+                        alt=""
+                      />
+                      <em>Lorem ipsum dolor sit amet consectetur.</em>
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Laudantium architecto earum aliquam, asperiores
+                      dignissimos praesentium rerum atque libero quis mollitia
+                      esse necessitatibus accusamus adipisci inventore a
+                      exercitationem voluptatem fuga itaque.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Laudantium architecto earum aliquam, asperiores
+                      dignissimos praesentium rerum atque libero quis mollitia
+                      esse necessitatibus accusamus adipisci inventore a
+                      exercitationem voluptatem fuga itaque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="product-tab__content">
               <h2 class="product-tab__heading">
                 What our customers are saying
@@ -404,7 +487,184 @@
                 </div>
               </div>
             </div>
-            <div class="product-tab__content"></div>
+            <div class="product-tab__content">
+              <h2 class="product-tab__heading">Similar items you might like</h2>
+              <div class="product-tab__similar-items">
+                <div class="row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3">
+                  <div class="col">
+                    <article class="product-card">
+                      <figure class="product-card__img-wrap">
+                        <a href="./product-detail.html"
+                          ><img
+                            src="./assets/images/product/item-3.png"
+                            alt=""
+                            class="product-card__img"
+                        /></a>
+                        <button
+                          class="product-card__like-btn like-btn like-btn--liked"
+                        >
+                          <img
+                            src="./assets/icons/cart-group-icon-1.svg"
+                            alt=""
+                            class="product-card__icon icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt=""
+                            class="product-card__icon--liked"
+                          />
+                        </button>
+                      </figure>
+                      <h3 class="product-card__title">
+                        <a href="./product-detail.html"
+                          >Lavazza Coffee Blends - Try the Italian Espresso</a
+                        >
+                      </h3>
+                      <p class="product-card__brand">Lavazza</p>
+                      <div class="product-card__row">
+                        <span class="product-card__price">$53.00</span>
+                        <div class="product-card__rate-block">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="product-card__star-icon"
+                          />
+                          <span class="product-card__score">3.4</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col">
+                    <article class="product-card">
+                      <figure class="product-card__img-wrap">
+                        <a href="./product-detail.html"
+                          ><img
+                            src="./assets/images/product/item-2.png"
+                            alt=""
+                            class="product-card__img"
+                        /></a>
+                        <button class="product-card__like-btn like-btn">
+                          <img
+                            src="./assets/icons/cart-group-icon-1.svg"
+                            alt=""
+                            class="product-card__icon icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt=""
+                            class="product-card__icon--liked"
+                          />
+                        </button>
+                      </figure>
+                      <h3 class="product-card__title">
+                        <a href="./product-detail.html"
+                          >Coffee Beans - Espresso Arabica and Robusta Beans</a
+                        >
+                      </h3>
+                      <p class="product-card__brand">Lavazza</p>
+                      <div class="product-card__row">
+                        <span class="product-card__price">$47.00</span>
+                        <div class="product-card__rate-block">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="product-card__star-icon"
+                          />
+                          <span class="product-card__score">4.3</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col">
+                    <article class="product-card">
+                      <figure class="product-card__img-wrap">
+                        <a href="./product-detail.html"
+                          ><img
+                            src="./assets/images/product/item-4.png"
+                            alt=""
+                            class="product-card__img"
+                        /></a>
+                        <button
+                          class="product-card__like-btn like-btn like-btn--liked"
+                        >
+                          <img
+                            src="./assets/icons/cart-group-icon-1.svg"
+                            alt=""
+                            class="product-card__icon icon"
+                          />
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt=""
+                            class="product-card__icon--liked"
+                          />
+                        </button>
+                      </figure>
+                      <h3 class="product-card__title">
+                        <a href="./product-detail.html"
+                          >Lavazza - Caffè Espresso Black Tin - Ground coffee</a
+                        >
+                      </h3>
+                      <p class="product-card__brand">welikecoffee</p>
+                      <div class="product-card__row">
+                        <span class="product-card__price">$99.99</span>
+                        <div class="product-card__rate-block">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="product-card__star-icon"
+                          />
+                          <span class="product-card__score">5.0</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col">
+                    <article class="product-card">
+                      <figure class="product-card__img-wrap">
+                        <a href="./product-detail.html"
+                          ><img
+                            src="./assets/images/product/item-1.png"
+                            alt=""
+                            class="product-card__img"
+                        /></a>
+                        <button
+                          class="product-card__like-btn like-btn like-btn--liked"
+                        >
+                          <img
+                            src="./assets/icons/cart-group-icon-1.svg"
+                            alt=""
+                            class="product-card__icon icon"
+                          />
+
+                          <img
+                            src="./assets/icons/heart-red.svg"
+                            alt=""
+                            class="product-card__icon--liked"
+                          />
+                        </button>
+                      </figure>
+                      <h3 class="product-card__title">
+                        <a href="./product-detail.html"
+                          >Qualità Oro Mountain Grown - Espresso Coffee Beans</a
+                        >
+                      </h3>
+                      <p class="product-card__brand">Lavazza</p>
+                      <div class="product-card__row">
+                        <span class="product-card__price">$38.65</span>
+                        <div class="product-card__rate-block">
+                          <img
+                            src="./assets/icons/star.svg"
+                            alt=""
+                            class="product-card__star-icon"
+                          />
+                          <span class="product-card__score">4.4</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

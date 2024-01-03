@@ -7,12 +7,12 @@
 .review-card {
   padding: 30px;
   border-radius: 16px;
-  background-color: #fafafd;
+  background-color: var(--review-card-bg-color);
   height: 100%;
 
   @include abs.screen(sm) {
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--review-card-bg-color);
   }
 
   &__img {

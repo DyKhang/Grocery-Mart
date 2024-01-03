@@ -290,9 +290,11 @@
     font-size: 2.2rem;
     font-weight: 500;
     line-height: 145.455%;
+    cursor: pointer;
+    user-select: none;
 
     &--active {
-      color: #1a162e;
+      color: var(--product-tab-item-active);
     }
 
     @include abs.screen(sm) {
@@ -316,5 +318,17 @@
       font-weight: 500;
       line-height: 144.444%;
     }
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__similar-items {
+    margin-top: 20px;
   }
 }
