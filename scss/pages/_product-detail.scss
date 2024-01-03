@@ -295,6 +295,7 @@
 
     &--active {
       color: var(--product-tab-item-active);
+      cursor: initial;
     }
 
     @include abs.screen(sm) {
