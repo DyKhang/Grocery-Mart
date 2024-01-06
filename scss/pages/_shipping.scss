@@ -1,0 +1,133 @@
+@use "../abstracts" as abs;
+
+.shipping {
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 141.667%;
+  }
+
+  &-address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include abs.screen(md) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+    }
+
+    &__desc {
+      margin-top: 4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 146.667%;
+    }
+
+    &__btn {
+      color: #1a162e;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__col-2nd {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__input {
+      position: relative;
+      align-self: flex-start;
+      appearance: none;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: var(--shipping-checkbox-uncheck);
+      }
+
+      &:checked::before {
+        content: url("../icons/checkbox-checked.svg");
+      }
+    }
+
+    &__name {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+    }
+
+    &__detail {
+      margin-top: 4px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 146.667%;
+    }
+
+    &__label-bottom {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 142.857%;
+      span {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -10px;
+          translate: 0 -50%;
+          width: 4px;
+          height: 4px;
+          background-color: #1a162e;
+          border-radius: 50%;
+        }
+      }
+
+      span:first-child {
+        margin-left: 20px;
+      }
+    }
+
+    &__edit {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      align-self: flex-end;
+      font-size: 1.8rem;
+      font-weight: 400;
+
+      @include abs.screen(md) {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+  }
+}

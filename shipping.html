@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <script>
+      load("#header", "./templates/header-logined.html");
+    </script>
+    <main>
+      <div class="container">
+        <div class="search-bar d-none d-md-flex">
+          <input
+            type="text"
+            name=""
+            placeholder="Search for item"
+            id=""
+            class="search-bar__input"
+          />
+          <button class="search-bar__btn">
+            <img
+              src="./assets/icons/header-search.svg"
+              alt=""
+              class="search-bar__icon icon"
+            />
+          </button>
+        </div>
+
+        <div class="breadcrumbs breadcrumbs-checkout">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="./" class="breadcrumbs__link">Home</a>
+              <img
+                src="./assets/icons/breadcrumbs-arrow.svg"
+                alt=""
+                class="breadcrumbs__icon"
+              />
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a href="./checkout.html" class="breadcrumbs__link">Checkout</a>
+              <img
+                src="./assets/icons/breadcrumbs-arrow.svg"
+                alt=""
+                class="breadcrumbs__icon"
+              />
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a href="./shipping.html" class="breadcrumbs__link">Shipping</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="checkout-container">
+          <div class="row row-cols-xl-1">
+            <div class="col-8">
+              <div class="cart-info shipping">
+                <h1 class="shipping__heading">
+                  1. Shipping, arrives between Mon, May 16—Tue, May 24
+                </h1>
+
+                <div class="cart-info__separate"></div>
+
+                <div class="shipping-address">
+                  <div class="shipping-address__row">
+                    <div class="shipping-address__col">
+                      <h2 class="shipping-address__title">Shipping address</h2>
+                      <p class="shipping-address__desc">
+                        Where should we deliver your order?
+                      </p>
+                    </div>
+
+                    <button
+                      toggle-target="#address"
+                      class="shipping-address__btn btn btn--primary btn--rounded js-toggle"
+                    >
+                      <img src="./assets/icons/plus.svg" alt="" />
+                      Add a new address
+                    </button>
+                  </div>
+
+                  <div class="shipping-address__row">
+                    <div class="shipping-address__col-2nd">
+                      <input
+                        type="radio"
+                        name="shipping"
+                        id="shipping"
+                        class="shipping-address__input"
+                        checked
+                      />
+                      <label for="shipping" class="shipping-address__label">
+                        <h3 class="shipping-address__name">Imran Khan</h3>
+                        <p class="shipping-address__detail">
+                          Museum of Rajas, Sylhet Sadar, Sylhet 3100.
+                        </p>
+                        <div class="shipping-address__label-bottom">
+                          <span>Shipping</span>
+                          <span>Delivery from store</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <button
+                      toggle-target="#address"
+                      class="js-toggle shipping-address__edit"
+                    >
+                      <img src="./assets/icons/edit.svg" class="icon" alt="" />
+                      Edit
+                    </button>
+                  </div>
+
+                  <div class="shipping-address__row">
+                    <div class="shipping-address__col-2nd">
+                      <input
+                        type="radio"
+                        name="shipping"
+                        id="shipping-1"
+                        class="shipping-address__input"
+                      />
+                      <label for="shipping-1" class="shipping-address__label">
+                        <h3 class="shipping-address__name">Imran Khan</h3>
+                        <p class="shipping-address__detail">
+                          Museum of Rajas, Sylhet Sadar, Sylhet 3100.
+                        </p>
+                        <div class="shipping-address__label-bottom">
+                          <span>Shipping</span>
+                          <span>Delivery from store</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <button
+                      toggle-target="#address"
+                      class="js-toggle shipping-address__edit"
+                    >
+                      <img src="./assets/icons/edit.svg" class="icon" alt="" />
+                      Edit
+                    </button>
+                  </div>
+                </div>
+
+                <h2 class="shipping__title">Items details</h2>
+
+                <article class="cart-item">
+                  <img
+                    src="./assets/images/product/item-1.png"
+                    alt=""
+                    class="cart-item__img"
+                  />
+                  <div class="cart-item__content">
+                    <div class="cart-item__top">
+                      <h2 class="cart-item__title">
+                        Coffee Beans - Espresso Arabica and Robusta Beans
+                      </h2>
+                      <span class="cart-item__price">$47.00</span>
+                    </div>
+
+                    <div class="cart-item__price-block">
+                      <span class="cart-item__price-blur">$47.00</span>
+                      <span class="cart-item__status">In Stock</span>
+                    </div>
+
+                    <div class="cart-item__bottom">
+                      <div class="cart-item__inputs">
+                        <div class="cart-item__input">
+                          LavAzza
+                          <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt=""
+                            class="cart-item__arrow icon"
+                          />
+                        </div>
+
+                        <div class="cart-item__input">
+                          <img
+                            src="./assets/icons/minus.svg"
+                            alt=""
+                            class="cart-item__minus icon"
+                          />
+                          1
+                          <img
+                            src="./assets/icons/plus.svg"
+                            alt=""
+                            class="cart-item__plus icon"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="cart-item__act">
+                        <button class="cart-item__save">
+                          <img
+                            src="./assets/icons/heart-blur.svg"
+                            alt=""
+                            class="cart-item__heart"
+                          />
+                          Save
+                        </button>
+
+                        <button
+                          toggle-target="#delete"
+                          class="cart-item__delete js-toggle"
+                        >
+                          <img
+                            src="./assets/icons/trash.svg"
+                            alt=""
+                            class="cart-item__trash"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <div class="cart-info__separate"></div>
+
+                <article class="cart-item">
+                  <img
+                    src="./assets/images/product/item-2.png"
+                    alt=""
+                    class="cart-item__img"
+                  />
+                  <div class="cart-item__content">
+                    <div class="cart-item__top">
+                      <h2 class="cart-item__title">
+                        Lavazza Coffee Blends - Try the Italian Espresso
+                      </h2>
+                      <span class="cart-item__price">$106.00</span>
+                    </div>
+
+                    <div class="cart-item__price-block">
+                      <span class="cart-item__price-blur">$53.00</span>
+                      <span class="cart-item__status">In Stock</span>
+                    </div>
+
+                    <div class="cart-item__bottom">
+                      <div class="cart-item__inputs">
+                        <div class="cart-item__input">
+                          LavAzza
+                          <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt=""
+                            class="cart-item__arrow icon"
+                          />
+                        </div>
+
+                        <div class="cart-item__input">
+                          <img
+                            src="./assets/icons/minus.svg"
+                            alt=""
+                            class="cart-item__minus icon"
+                          />
+                          2
+                          <img
+                            src="./assets/icons/plus.svg"
+                            alt=""
+                            class="cart-item__plus icon"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="cart-item__act">
+                        <button class="cart-item__save">
+                          <img
+                            src="./assets/icons/heart-blur.svg"
+                            alt=""
+                            class="cart-item__heart"
+                          />
+                          Save
+                        </button>
+
+                        <button
+                          toggle-target="#delete"
+                          class="cart-item__delete js-toggle"
+                        >
+                          <img
+                            src="./assets/icons/trash.svg"
+                            alt=""
+                            class="cart-item__trash"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <div class="cart-info__separate"></div>
+
+                <article class="cart-item">
+                  <img
+                    src="./assets/images/product/item-3.png"
+                    alt=""
+                    class="cart-item__img"
+                  />
+                  <div class="cart-item__content">
+                    <div class="cart-item__top">
+                      <h2 class="cart-item__title">
+                        Qualità Oro Mountain Grown - Espresso Coffee Beans
+                      </h2>
+                      <span class="cart-item__price">$38.65</span>
+                    </div>
+
+                    <div class="cart-item__price-block">
+                      <span class="cart-item__price-blur">$38.65</span>
+                      <span class="cart-item__status">In Stock</span>
+                    </div>
+
+                    <div class="cart-item__bottom">
+                      <div class="cart-item__inputs">
+                        <div class="cart-item__input">
+                          LavAzza
+                          <img
+                            src="./assets/icons/arrow-down.svg"
+                            alt=""
+                            class="cart-item__arrow icon"
+                          />
+                        </div>
+
+                        <div class="cart-item__input">
+                          <img
+                            src="./assets/icons/minus.svg"
+                            alt=""
+                            class="cart-item__minus icon"
+                          />
+                          1
+                          <img
+                            src="./assets/icons/plus.svg"
+                            alt=""
+                            class="cart-item__plus icon"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="cart-item__act">
+                        <button class="cart-item__save">
+                          <img
+                            src="./assets/icons/heart-blur.svg"
+                            alt=""
+                            class="cart-item__heart"
+                          />
+                          Save
+                        </button>
+
+                        <button
+                          toggle-target="#delete"
+                          class="cart-item__delete js-toggle"
+                        >
+                          <img
+                            src="./assets/icons/trash.svg"
+                            alt=""
+                            class="cart-item__trash"
+                          />
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <div class="cart-info__bottom d-md-none">
+                  <a href="./" class="cart-info__back">
+                    <img
+                      src="./assets/icons/arrow-left-checkout.svg"
+                      alt=""
+                      class="cart-info__arrow"
+                    />
+                    Continue Shopping
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 g-xl-3">
+              <div class="cart-info">
+                <div class="cart-info__col cart-info__col-aside">
+                  <div class="cart-info__row">
+                    <div>
+                      Subtotal
+                      <div class="cart-info__label">(items)</div>
+                    </div>
+
+                    <div class="cart-info__value">3</div>
+                  </div>
+
+                  <div class="cart-info__row">
+                    <div>
+                      Price
+                      <div class="cart-info__label">(Total)</div>
+                    </div>
+
+                    <div class="cart-info__value">$191.65</div>
+                  </div>
+
+                  <div class="cart-info__row">
+                    <div>Shipping</div>
+
+                    <div class="cart-info__value">$10.00</div>
+                  </div>
+
+                  <div class="cart-info__separate"></div>
+
+                  <div class="cart-info__row">
+                    <div>Estimated Total</div>
+
+                    <div class="cart-info__value">$201.65</div>
+                  </div>
+                </div>
+
+                <button class="cart-info__btn btn btn--primary btn--rounded">
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+
+    <!-- Dialog / Modal-Delete -->
+    <div id="delete" class="dialog dialog--small hide">
+      <div class="dialog__content">
+        <h2 class="dialog__text">
+          Do you want to remove this item from shopping cart?
+        </h2>
+        <div class="dialog__bottom">
+          <button toggle-target="#delete" class="btn js-toggle btn--text">
+            Cancel
+          </button>
+          <button
+            toggle-target="#delete"
+            class="dialog__btn dialog__btn--danger js-toggle btn btn--primary"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+
+      <div toggle-target="#delete" class="dialog__overlay js-toggle"></div>
+    </div>
+
+    <!-- Dialog / Modal-Address -->
+    <div id="address" class="dialog hide">
+      <div class="dialog__content">
+        <h2 class="dialog__text">Add new shipping address</h2>
+        <form action="" class="form dialog__form">
+          <div class="dialog__body">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <div class="form__text-input">
+                  <input
+                    type="text"
+                    name=""
+                    id="name"
+                    placeholder="Name"
+                    class="form__input"
+                    required
+                    minlength="2"
+                  />
+
+                  <img
+                    src="./assets/icons/warning.svg"
+                    alt=""
+                    class="form__icon-error"
+                  />
+                </div>
+
+                <p class="form__error">Nhập tối thiểu 2 kí tự</p>
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__label">Phone</label>
+                <div class="form__text-input">
+                  <input
+                    type="tel"
+                    name=""
+                    id="phone"
+                    placeholder="Phone"
+                    class="form__input"
+                    required
+                    minlength="10"
+                  />
+
+                  <img
+                    src="./assets/icons/warning.svg"
+                    alt=""
+                    class="form__icon-error"
+                  />
+                </div>
+
+                <p class="form__error">Nhập tối thiểu 10 kí tự</p>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <label for="address-fill" class="form__label">Address</label>
+              <div class="form__text-area">
+                <textarea
+                  name="address-fill"
+                  id="address-fill"
+                  cols="30"
+                  rows="10"
+                  class="form__text-area-input"
+                  placeholder="Address (Area and street)"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <label for="city" class="form__label">City/District/Town</label>
+              <div class="form__text-input">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  cols="30"
+                  rows="10"
+                  class="form__input"
+                  placeholder="City/District/Town"
+                />
+              </div>
+            </div>
+
+            <label class="form__checkbox">
+              <input
+                hidden
+                type="checkbox"
+                name=""
+                id=""
+                class="form__checkbox-input"
+              />
+              <span class="form__checkbox-label">Set as default address</span>
+            </label>
+          </div>
+
+          <div class="dialog__bottom">
+            <button toggle-target="#address" class="btn js-toggle btn--text">
+              Cancel
+            </button>
+            <button
+              toggle-target="#address"
+              class="dialog__btn js-toggle btn btn--primary"
+            >
+              Create
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="dialog__overlay"></div>
+    </div>
+  </body>
+</html>

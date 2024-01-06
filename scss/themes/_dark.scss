@@ -49,6 +49,7 @@ html.dark {
   // Breadcrumbs
   --breadcrumbs-bg-color: #171c28;
   --breadcrumbs-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+  --breadcrumbs-checkout-bg-color: #171c28;
 
   // Product-page
   --product-page-bg-color: #292e39;
@@ -67,8 +68,23 @@ html.dark {
   // Review Card
   --review-card-bg-color: #171c28;
 
+  // Act Dropdown
+  --act-dropdown-bg-color: #292e39;
+  --act-dropdown-shadow: 0px 40px 90px 20px rgba(23, 28, 40, 0.4);
+
+  // Dialog
+  --dialog-bg-color: #292e39;
+  --dialog-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+
+  // Checkout
+  --cart-info-bg-color: #171c28;
+  --cart-info-shadow: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
+
+  // Shipping
+  --shipping-checkbox-uncheck: url("../icons/checkbox-uncheck-dark.svg");
+
   @include abs.screen(lg) {
-    --header-shadow-color: 0px 20px 60px 10px rgba(0, 0, 0, 0.2);
+    --header-shadow-color: 0px 20px 60px 10px rgba(23, 28, 40, 0.2);
   }
 
   @include abs.screen(sm) {
