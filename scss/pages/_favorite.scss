@@ -1,0 +1,94 @@
+@use "../abstracts" as abs;
+
+.favorite {
+  .shipping-address__input::before {
+    top: -13.8px;
+  }
+
+  &__heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 145.455%;
+  }
+
+  &__desc {
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 146.667%;
+  }
+
+  .cart-item {
+    .shipping-address__input::before {
+      top: 0;
+    }
+  }
+
+  .cart-item__bottom {
+    justify-content: flex-start;
+
+    @include abs.screen(xl) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+
+  .cart-item__act {
+    margin-left: 30px;
+
+    @include abs.screen(md) {
+      margin: 0;
+    }
+  }
+
+  &__btn {
+    width: 200px;
+    height: 68px;
+    margin-left: auto;
+    color: #1a162e;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 145.455%;
+
+    @include abs.screen(xl) {
+      margin: 0;
+    }
+
+    @include abs.screen(md) {
+      width: 168px;
+      height: 60px;
+
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+
+  .cart-item__title {
+    width: 100%;
+  }
+
+  &__submit {
+    width: 236px;
+    height: 68px;
+    color: #1a162e;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 145.455%;
+
+    @include abs.screen(md) {
+      width: 194px;
+      height: 60px;
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+
+  .cart-info__bottom {
+    @include abs.screen(md) {
+      flex-direction: column;
+      row-gap: 16px;
+    }
+  }
+}

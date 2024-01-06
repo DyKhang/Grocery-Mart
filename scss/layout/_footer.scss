@@ -37,12 +37,6 @@
     border-bottom: 2px solid #fff;
     padding-bottom: 25px;
 
-    @include abs.screen(sm) {
-      .col + .col {
-        margin-top: 20px;
-      }
-    }
-
     & + & {
       border: none;
       padding-top: 25px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout | Grocery Mart</title>
+    <title>Favorite | Grocery Mart</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon" />
@@ -67,16 +67,36 @@
             </li>
 
             <li class="breadcrumbs__item">
-              <a href="#!" class="breadcrumbs__link">Checkout</a>
+              <a href="#!" class="breadcrumbs__link">Favorite</a>
             </li>
           </ul>
         </div>
 
         <div class="checkout-container">
-          <div class="row row-cols-xl-1">
-            <div class="col-8">
-              <div class="cart-info">
+          <div class="row">
+            <div class="col-12">
+              <div class="cart-info favorite">
+                <div class="favorite__col">
+                  <h1 class="favorite__heading">Favourite List</h1>
+                  <p class="favorite__desc">3 items</p>
+                </div>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    name="shipping"
+                    class="shipping-address__input"
+                    checked
+                  />
+                </label>
+
                 <article class="cart-item">
+                  <input
+                    type="checkbox"
+                    name="shipping"
+                    class="shipping-address__input"
+                    checked
+                  />
                   <a href="./product-detail.html">
                     <img
                       src="./assets/images/product/item-1.png"
@@ -147,6 +167,12 @@
                           Delete
                         </button>
                       </div>
+
+                      <button
+                        class="btn btn--primary btn--rounded favorite__btn"
+                      >
+                        Check Out
+                      </button>
                     </div>
                   </div>
                 </article>
@@ -154,6 +180,12 @@
                 <div class="cart-info__separate"></div>
 
                 <article class="cart-item">
+                  <input
+                    type="checkbox"
+                    name="shipping"
+                    class="shipping-address__input"
+                    checked
+                  />
                   <a href="./product-detail.html">
                     <img
                       src="./assets/images/product/item-2.png"
@@ -224,6 +256,12 @@
                           Delete
                         </button>
                       </div>
+
+                      <button
+                        class="btn btn--primary btn--rounded favorite__btn"
+                      >
+                        Check Out
+                      </button>
                     </div>
                   </div>
                 </article>
@@ -231,6 +269,12 @@
                 <div class="cart-info__separate"></div>
 
                 <article class="cart-item">
+                  <input
+                    type="checkbox"
+                    name="shipping"
+                    class="shipping-address__input"
+                    checked
+                  />
                   <a href="./product-detail.html">
                     <img
                       src="./assets/images/product/item-3.png"
@@ -301,13 +345,19 @@
                           Delete
                         </button>
                       </div>
+
+                      <button
+                        class="btn btn--primary btn--rounded favorite__btn"
+                      >
+                        Check Out
+                      </button>
                     </div>
                   </div>
                 </article>
 
                 <div class="cart-info__separate d-md-none"></div>
 
-                <div class="cart-info__bottom d-md-none">
+                <div class="cart-info__bottom">
                   <a href="./" class="cart-info__back">
                     <img
                       src="./assets/icons/arrow-left-checkout.svg"
@@ -317,84 +367,12 @@
                     Continue Shopping
                   </a>
 
-                  <div class="cart-info__col">
-                    <div class="cart-info__delivery">
-                      <span>Subtotal:</span>
-                      <span>$191.65</span>
-                    </div>
-
-                    <div class="cart-info__delivery">
-                      <span>Shipping:</span>
-                      <span>$10.00</span>
-                    </div>
-
-                    <div class="cart-info__col-separate"></div>
-
-                    <div class="cart-info__total">
-                      <span>Total:</span>
-                      <span>$201.65</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 g-xl-3">
-              <div class="cart-info">
-                <div class="cart-info__col cart-info__col-aside">
-                  <div class="cart-info__row">
-                    <div>
-                      Subtotal
-                      <div class="cart-info__label">(items)</div>
-                    </div>
-
-                    <div class="cart-info__value">3</div>
-                  </div>
-
-                  <div class="cart-info__row">
-                    <div>
-                      Price
-                      <div class="cart-info__label">(Total)</div>
-                    </div>
-
-                    <div class="cart-info__value">$191.65</div>
-                  </div>
-
-                  <div class="cart-info__row">
-                    <div>Shipping</div>
-
-                    <div class="cart-info__value">$10.00</div>
-                  </div>
-
-                  <div class="cart-info__separate"></div>
-
-                  <div class="cart-info__row">
-                    <div>Estimated Total</div>
-
-                    <div class="cart-info__value">$201.65</div>
-                  </div>
-                </div>
-
-                <a
-                  href="./shipping.html"
-                  class="cart-info__btn btn btn--primary btn--rounded"
-                >
-                  Continue to checkout
-                </a>
-              </div>
-
-              <div class="cart-info cart-info-gift">
-                <img
-                  src="./assets/icons/gift.svg"
-                  alt=""
-                  class="cart-info__gift"
-                />
-                <div class="cart-info__gift-content">
-                  <h2 class="cart-info__gift-heading">
-                    Send this order as a gift.
-                  </h2>
-                  <p class="cart-info__gift-desc">
-                    Available items will be shipped to your gift recipient.
-                  </p>
+                  <a
+                    href="./checkout.html"
+                    class="btn btn--primary btn--rounded favorite__submit"
+                  >
+                    All Check Out
+                  </a>
                 </div>
               </div>
             </div>
