@@ -1,0 +1,159 @@
+@use "../abstracts" as abs;
+
+.payment {
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
+  &__heading {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 145.455%;
+  }
+
+  &__link {
+    color: #0071dc;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 146.667%;
+  }
+
+  &__desc {
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 146.667%;
+  }
+
+  .form__group {
+    margin: 0;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__form-date-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+    background-color: transparent;
+
+    &:first-child {
+      padding-right: 12px;
+    }
+
+    &:last-child {
+      padding-left: 12px;
+      border-left: 1px solid #d2d1d6;
+    }
+
+    &::placeholder {
+      color: #ededf6;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 144.444%;
+    }
+  }
+
+  &__form-submit {
+    color: #1a162e;
+  }
+}
+
+.payment-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: var(--payment-item-bg-color);
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+  }
+
+  &__desc {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 146.667%;
+  }
+}
+
+.payment-label {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: var(--payment-label-bg-color);
+  cursor: pointer;
+
+  @include abs.screen(sm) {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &:focus-within &__checkbox-group {
+    opacity: 1;
+  }
+
+  &__brand {
+    width: 70px;
+    object-fit: cover;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 144.444%;
+  }
+
+  &__desc {
+    margin-top: 4px;
+    color: #9e9da8;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__checkbox-group {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    opacity: 0.6;
+    user-select: none;
+  }
+
+  &__input::before {
+    position: absolute;
+    top: -4px;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}

@@ -85,6 +85,10 @@
   // Shipping
   --shipping-checkbox-uncheck: url("../icons/checkbox-uncheck.svg");
 
+  // Payment
+  --payment-item-bg-color: #f6f6f6;
+  --payment-label-bg-color: #f6f6f6;
+
   @include abs.screen(lg) {
     --header-bg-color: #fff;
     --header-shadow-color: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
