@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Credit | Grocery Mart</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <script>
+      load("#header", "./templates/header-logined.html");
+    </script>
+    <main>
+      <div class="container">
+        <div class="search-bar d-none d-md-flex">
+          <input
+            type="text"
+            name=""
+            placeholder="Search for item"
+            id=""
+            class="search-bar__input"
+          />
+          <button class="search-bar__btn">
+            <img
+              src="./assets/icons/header-search.svg"
+              alt=""
+              class="search-bar__icon icon"
+            />
+          </button>
+        </div>
+
+        <div class="profile">
+          <div class="row row-cols-lg-1 gy-lg-3">
+            <div class="col-3">
+              <section class="profile-user">
+                <div class="profile-user__top">
+                  <img
+                    src="./assets/images/header-avatar.png"
+                    alt=""
+                    class="profile-user__avatar"
+                  />
+                  <h1 class="profile-user__heading">Imran Khan</h1>
+                  <p class="profile-user__date">Registered: 17th May 2022</p>
+                </div>
+
+                <div class="profile-user__bottom">
+                  <div class="profile-user__menu">
+                    <h3 class="profile-user__title">Manage Account</h3>
+                    <ul class="profile-user__list">
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-1.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Personal info
+                        </a>
+                      </li>
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-2.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Addresses
+                        </a>
+                      </li>
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-3.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Communications & privacy
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="profile-user__menu">
+                    <h3 class="profile-user__title">My items</h3>
+                    <ul class="profile-user__list">
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-4.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Reorder
+                        </a>
+                      </li>
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-5.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Lists
+                        </a>
+                      </li>
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-6.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Registries
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="profile-user__menu">
+                    <h3 class="profile-user__title">Subscriptions & plans</h3>
+                    <ul class="profile-user__list">
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-7.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Protection plans
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="profile-user__menu">
+                    <h3 class="profile-user__title">Customer Service</h3>
+                    <ul class="profile-user__list">
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-8.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Help
+                        </a>
+                      </li>
+
+                      <li class="profile-user__item">
+                        <a href="#!" class="profile-user__link">
+                          <img
+                            src="./assets/icons/profile/icon-9.svg"
+                            alt=""
+                            class="profile-user__icon icon"
+                          />
+                          Terms of Use
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-9">
+              <section class="profile-info add-credit">
+                <div class="add-credit__row">
+                  <a href="./profile.html">
+                    <img
+                      src="./assets/icons/arrow-left.svg"
+                      alt=""
+                      class="add-credit__back icon"
+                    />
+                  </a>
+                  <h2 class="profile-info__heading">My Wallet</h2>
+                </div>
+
+                <form action="" class="form add-credit__form">
+                  <div class="form__row add-credit__form-row">
+                    <div class="form__group add-credit__form-group">
+                      <label for="first-name" class="payment__label"
+                        >First Name</label
+                      >
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="first-name"
+                          placeholder="Imran"
+                          class="form__input"
+                          required
+                          minlength="2"
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 4 kí tự</p>
+                    </div>
+                    <div class="form__group add-credit__form-group">
+                      <label for="last-name" class="payment__label"
+                        >Last Name</label
+                      >
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="last-name"
+                          placeholder="Khan"
+                          class="form__input"
+                          required
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 2 kí tự</p>
+                    </div>
+                  </div>
+
+                  <div class="form__row add-credit__form-row">
+                    <div class="form__group add-credit__form-group">
+                      <label for="card-info" class="payment__label"
+                        >Card Information</label
+                      >
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="card-info"
+                          placeholder="Card Number"
+                          class="form__input"
+                          required
+                          minlength="10"
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 10 chữ số</p>
+                    </div>
+                    <div class="form__group add-credit__form-group">
+                      <label for="date" class="payment__label"
+                        >Expiration Date</label
+                      >
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="date"
+                          placeholder="MM/YY"
+                          class="form__input"
+                          required
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 2 kí tự</p>
+                    </div>
+                  </div>
+
+                  <div class="form__row add-credit__form-row">
+                    <div class="form__group add-credit__form-group">
+                      <label for="cvv" class="payment__label">CVV</label>
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="cvv"
+                          placeholder="123"
+                          class="form__input"
+                          required
+                          minlength="3"
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 3 kí tự</p>
+                    </div>
+                    <div class="form__group add-credit__form-group">
+                      <label for="phone" class="payment__label"
+                        >Phone Number</label
+                      >
+                      <div class="form__text-input">
+                        <input
+                          type="text"
+                          name=""
+                          id="phone"
+                          placeholder="017"
+                          class="form__input"
+                          required
+                        />
+                        <img
+                          src="./assets/icons/warning.svg"
+                          alt=""
+                          class="form__icon-error"
+                        />
+                      </div>
+
+                      <p class="form__error">Nhập ít nhất 10 chữ số</p>
+                    </div>
+                  </div>
+
+                  <div class="add-credit__form-row">
+                    <span class="add-credit__text">Card Preferences</span>
+                    <label class="form__checkbox">
+                      <input
+                        hidden
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="form__checkbox-input"
+                      />
+                      <span
+                        class="form__checkbox-label add-credit__checkbox-label"
+                        >Set as default card</span
+                      >
+                    </label>
+                  </div>
+
+                  <div class="add-credit__form-act">
+                    <button class="btn btn--text add-credit__btn-text">
+                      Cancel
+                    </button>
+
+                    <button
+                      class="btn btn--primary btn--rounded add-credit__btn-submit"
+                    >
+                      Save Card
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+  </body>
+</html>

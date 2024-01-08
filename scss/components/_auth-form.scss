@@ -7,6 +7,12 @@ $error: #ed4337;
     opacity: 0.4;
   }
 
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__label {
     margin-bottom: 10px;
     font-size: 1.4rem;

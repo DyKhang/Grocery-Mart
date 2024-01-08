@@ -1,11 +1,13 @@
+@use "../abstracts" as abs;
+
 .profile {
   margin-top: 30px;
 }
 
 .profile-user {
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--profile-user-bg-color);
+  box-shadow: var(--profile-user-shadow);
 
   &__top {
     display: flex;
@@ -15,7 +17,6 @@
     background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%),
       url(../images/profile/profile-bg-user.png) no-repeat center/cover;
     border-radius: 20px 20px 0px 0px;
-    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
     padding-bottom: 20px;
   }
 
@@ -77,13 +78,17 @@
 .profile-info {
   padding: 30px;
   border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--profile-info-bg-color);
+  box-shadow: var(--profile-info-shadow);
 
   &__heading {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 141.667%;
+
+    & ~ & {
+      margin-top: 30px;
+    }
   }
 
   &__desc {
@@ -95,5 +100,98 @@
 
   .credit-cards {
     margin-top: 16px;
+  }
+
+  &__tags {
+    margin-top: 16px;
+  }
+
+  &__carts {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+.profile-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--profile-tag-bg-color);
+
+  &__icon-wrap {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--profile-tag-icon-wrap-bg-color);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+
+  &__desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 142.857%;
+  }
+}
+
+.profile-cart {
+  display: flex;
+  gap: 20px;
+  &__thumb {
+    width: 150px;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+
+  &__act {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include abs.screen(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__price {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 145.455%;
+  }
+
+  &__btn {
+    width: 126px;
+    height: 42px;
+    color: #1a162e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+
+  &__separate {
+    width: 100%;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #d2d1d6;
   }
 }

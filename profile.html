@@ -56,7 +56,7 @@
         </div>
 
         <div class="profile">
-          <div class="row">
+          <div class="row row-cols-lg-1 gy-lg-3">
             <div class="col-3">
               <section class="profile-user">
                 <div class="profile-user__top">
@@ -74,11 +74,14 @@
                     <h3 class="profile-user__title">Manage Account</h3>
                     <ul class="profile-user__list">
                       <li class="profile-user__item">
-                        <a href="#!" class="profile-user__link">
+                        <a
+                          href="./personal-info.html"
+                          class="profile-user__link"
+                        >
                           <img
                             src="./assets/icons/profile/icon-1.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Personal info
                         </a>
@@ -88,7 +91,7 @@
                           <img
                             src="./assets/icons/profile/icon-2.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Addresses
                         </a>
@@ -98,7 +101,7 @@
                           <img
                             src="./assets/icons/profile/icon-3.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Communications & privacy
                         </a>
@@ -114,7 +117,7 @@
                           <img
                             src="./assets/icons/profile/icon-4.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Reorder
                         </a>
@@ -124,7 +127,7 @@
                           <img
                             src="./assets/icons/profile/icon-5.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Lists
                         </a>
@@ -134,7 +137,7 @@
                           <img
                             src="./assets/icons/profile/icon-6.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Registries
                         </a>
@@ -150,7 +153,7 @@
                           <img
                             src="./assets/icons/profile/icon-7.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Protection plans
                         </a>
@@ -166,7 +169,7 @@
                           <img
                             src="./assets/icons/profile/icon-8.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Help
                         </a>
@@ -177,7 +180,7 @@
                           <img
                             src="./assets/icons/profile/icon-9.svg"
                             alt=""
-                            class="profile-user__icon"
+                            class="profile-user__icon icon"
                           />
                           Terms of Use
                         </a>
@@ -193,7 +196,9 @@
                 <p class="profile-info__desc">Payment methods</p>
 
                 <div class="credit-cards">
-                  <div class="row row-cols-3">
+                  <div
+                    class="row row-cols-3 row-cols-xl-2 gy-xl-3 row-cols-md-1"
+                  >
                     <div class="col">
                       <div class="credit-card credit-card-1">
                         <div class="credit-card__top">
@@ -291,14 +296,135 @@
                     </div>
 
                     <div class="col">
-                      <button class="credit-card-add">
+                      <a href="./add-new-credit.html" class="credit-card-add">
                         <img
-                          class="credit-card__plus"
+                          class="credit-card__plus icon"
                           src="./assets/icons/plus.svg"
                           alt=""
                         />
                         <span class="credit-card__create">Add New Card</span>
-                      </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="profile-info__heading">Account info</h2>
+                <p class="profile-info__desc">
+                  Addresses, contact information and password
+                </p>
+
+                <div class="profile-info__tags">
+                  <div class="row row-cols-2 g-3 row-cols-md-1">
+                    <div class="col">
+                      <a href="./personal-info.html" class="profile-tag">
+                        <div class="profile-tag__icon-wrap">
+                          <img
+                            src="./assets/icons/profile/icon-3.svg"
+                            alt=""
+                            class="icon profile-tag__icon"
+                          />
+                        </div>
+
+                        <div class="profile-tag__col">
+                          <h3 class="profile-tag__title">Email Address</h3>
+                          <p class="profile-tag__desc">tarek97.ta@gmail.com</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="./personal-info.html" class="profile-tag">
+                        <div class="profile-tag__icon-wrap">
+                          <img
+                            src="./assets/icons/profile/profile-info/phone-icon.svg"
+                            alt=""
+                            class="icon profile-tag__icon"
+                          />
+                        </div>
+
+                        <div class="profile-tag__col">
+                          <h3 class="profile-tag__title">Phone number</h3>
+                          <p class="profile-tag__desc">+000 11122 2345 657</p>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="./personal-info.html" class="profile-tag">
+                        <div class="profile-tag__icon-wrap">
+                          <img
+                            src="./assets/icons/profile/icon-2.svg"
+                            alt=""
+                            class="icon profile-tag__icon"
+                          />
+                        </div>
+
+                        <div class="profile-tag__col">
+                          <h3 class="profile-tag__title">Add an address</h3>
+                          <p class="profile-tag__desc">
+                            Bangladesh Embassy, Washington, DC 20008
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="profile-info__heading">Lists</h2>
+                <p class="profile-info__desc">2 items - Primary</p>
+
+                <div class="profile-info__carts">
+                  <div class="profile-cart">
+                    <a href="./product-detail.html">
+                      <img
+                        src="./assets/images/product/item-1.png"
+                        alt=""
+                        class="profile-cart__thumb"
+                      />
+                    </a>
+                    <div class="profile-cart__content">
+                      <a href="./product-detail.html">
+                        <h3 class="profile-cart__title">
+                          Coffee Beans - Espresso Arabica and Robusta Beans
+                        </h3>
+                      </a>
+
+                      <div class="profile-cart__act">
+                        <span class="profile-cart__price">$47.00</span>
+                        <button
+                          class="btn btn--primary btn--rounded profile-cart__btn"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="profile-cart__separate"></div>
+
+                  <div class="profile-cart">
+                    <a href="./product-detail.html">
+                      <img
+                        src="./assets/images/product/item-2.png"
+                        alt=""
+                        class="profile-cart__thumb"
+                      />
+                    </a>
+                    <div class="profile-cart__content">
+                      <a href="./product-detail.html">
+                        <h3 class="profile-cart__title">
+                          Lavazza Coffee Blends - Try the Italian Espresso
+                        </h3>
+                      </a>
+
+                      <div class="profile-cart__act">
+                        <span class="profile-cart__price">$53.00</span>
+                        <button
+                          class="btn btn--primary btn--rounded profile-cart__btn"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
