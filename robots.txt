@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dykhang.github.io/Grocery-Mart/sitemap.xml
